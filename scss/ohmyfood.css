@@ -527,8 +527,8 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
     display: flex;
     justify-content: center;
   }
-  #Restaurants div.wrapper-grid div.card div.card__body.laPaletteDuGout a span.nouveau,
-#Restaurants div.wrapper-grid a div.card div.card__body.laNoteEnchantee span.nouveau {
+  #Restaurants  div.wrapper-grid a div.card div.card__body.laPaletteDuGout span.nouveau,
+  #Restaurants div.wrapper-grid a div.card div.card__body.laNoteEnchantee span.nouveau {
     left: 57.5rem;
     top: 15px;
   }
