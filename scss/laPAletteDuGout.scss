@@ -1,0 +1,602 @@
+/*
+MA PALETTE DE COULEURS :
+Couleur primaire   #9356DC
+Couleur secondaire #FF79DA
+Couleur Tertaire   #99E2D0
+*/
+
+/*Mes variables pour les couleurs*/
+
+
+$main-background-color: #FFFFFF;
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$border-color:#f2f2f2;
+$text-color:#606060;
+$second-background-color: #E8E8E8;
+$third-background-color: #f2f2f2;
+$darker-text-color: black;
+$footer-background-color: #353535;
+$placeholder-color: #505050;
+$footer-text-color: #FFFFFF;
+$mainNav-button-color: #FFFFFF;
+$secondNav-icon-color: #808080;
+$mainContent-background-color: #f2f2f2;
+$green-button-color: #088F8F;
+$heart-icon-border-color: #817c7a;
+$card-background-color: #FFFFFF;
+
+
+
+/*MAPS*/
+
+$font-weights:(
+    "small": 300,
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+    );
+
+
+
+/*
+Mes Polices
+Logo et titres: Shrikhand
+Texte: Roboto
+*/
+
+body {
+
+    background-color: $main-background-color;
+    font-family: 'Roboto', sans-serif;
+    color: $text-color;	
+    font-weight: map-get($font-weights, bold);
+
+}
+
+      
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+ul {
+    /*I want to remove all the bullet points */
+    list-style-type: none; 
+
+}
+
+a, span {
+    /*I want to remove my underlines*/
+    text-decoration: none;
+    color: $text-color;
+}
+
+
+
+img {
+
+    /*I want my images to fit in the container*/
+    width: 100%;
+}
+
+
+
+
+.wrapper{
+        
+    min-width: 320px;
+    max-width: 400px; /*Un point d'arrêt fluide */
+    margin: 0px 22px; /*Pour centrer les éléments: 
+    je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+    
+}
+
+
+    /*----------HEADER-----------*/
+    
+    
+    
+    #header{
+    
+        border-bottom: 1px solid $border-color;
+        background-color: $main-background-color;
+        /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [color];*/
+        justify-content: center;
+       
+    }
+    
+    header nav ul li.logo {
+    
+        padding: 1.5rem 4.2rem 0.2rem 4.2rem;
+        font-family: 'Shrikhand', sans-serif;
+    
+    } 
+
+
+    
+    /*----------secondheader-----------*/
+
+
+    #secondHeader div.container img {
+
+        background-image: url(../images/restaurants/ALaFrancaise.jpg);
+        width: 100%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        z-index: -1;
+        position: relative;
+    }
+
+
+
+
+    /*----------mainContent-----------*/
+
+
+
+    #mainContent{
+
+        background-color: $third-background-color;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        margin-top: -43px;
+        z-index: 10;
+    }
+
+
+    #Menu{
+
+
+            header{
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+
+            > header:nth-child(1) > h1:nth-child(1){
+
+                color: $darker-text-color;
+                font-family: 'Shrikhand', sans-serif;     
+                font-weight: map-get($font-weights, bold);
+            }
+
+            header{
+
+                padding-top: 1.8rem;
+                font-size: large;
+                font-weight: map-get($font-weights, medium);
+            }
+
+            header i.far.fa-heart{
+
+                font-size: x-large;
+                padding-right: 0.9rem;
+                color: $secondNav-icon-color;
+            }
+
+
+            div.wrapper-grid section.entrees header{
+
+                padding-top: 1rem;
+            }
+
+            div.wrapper-grid section.entrees header,
+            div.wrapper-grid section.plats header,
+            div.wrapper-grid section.desserts header{
+
+                font-weight: map-get($font-weights, regular);
+                font-size: medium;
+                margin-bottom: 0.9rem;
+                
+            }
+
+            div.wrapper-grid section.entrees header:after,
+            div.wrapper-grid section.plats header:after,
+            div.wrapper-grid section.desserts header:after
+            {
+
+                    content: ""; /* This is necessary for the pseudo element to work. */ 
+                    display: block; /* This will put the pseudo element on its own line. */
+                    margin-right: 17.5rem;
+                    margin-left: -8rem; /* This will center the border. */
+                    margin-top: 0.5rem;
+                    width: 13%; /* Change this to whatever width you want. */
+                    padding-top: 20px; /* This creates some space between the element and the border. */
+                    border-bottom: 3px solid $tertiary-color; /* This creates the border. Replace black with whatever color you want.*/
+            }
+   
+  
+            div.wrapper-grid section.entrees div.card div.card__body,
+            div.wrapper-grid section.plats div.card div.card__body,
+            div.wrapper-grid section.desserts div.card{
+
+                    background-color: $card-background-color;
+                    margin-bottom: 0.5rem;
+                    border-radius: 19px;
+                    padding: 0.9rem;
+
+            }
+
+
+            div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description,
+            div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description,
+            div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description{
+
+                    display: flex;
+                    justify-content: space-between;
+            }
+
+
+   
+            div.wrapper-grid button{
+
+                    border-radius: 30px;
+                    padding: 0.7rem 2.9rem 0.7rem 2.9rem;
+                    color: #FFFFFF;
+                    background-color: #FF79DA;
+                    font-size: medium;
+                    margin: 3rem 3rem 5.5rem 3.5rem;
+                    background: linear-gradient(#FF79DA, #9356DC);
+                    box-shadow: 2px 2px 7px 0px #888888;
+                    border: 2px;
+                    
+            }
+
+
+            div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 h3.card__title,
+            div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 h3.card__title,
+            div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 h3.card__title
+            {
+
+                    color: $darker-text-color;
+                    font-weight: map-get($font-weights, bold);
+                    font-size: medium;
+                
+            }
+
+            div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description p,
+            div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description p,
+            div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description p{
+
+                    font-weight: map-get($font-weights, regular);
+                    font-size: 14px;
+                    padding-top: 0.3rem;
+            }
+
+
+    } /*END OF #Menu*/
+
+
+
+    /*----------footer-----------*/  
+
+
+        
+    .footer{
+
+    
+        background-color: $footer-background-color;
+        display: flex;
+        justify-content: flex-start;
+        color: $footer-text-color;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+
+        ul li h2{
+    
+            font-family: 'Shrikhand', sans-serif;
+        }
+        
+        ul li a{
+    
+            color: $footer-text-color;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        ul li:first-child{
+
+            padding-bottom: 0.6rem;
+            font-size: small;
+            font-weight: map-get($font-weights, small);
+        }
+
+        ul li.button{
+
+            padding-top: 0.5rem;
+            padding-bottom: 0.1rem;
+            font-size: medium;
+            font-weight: map-get($font-weights, regular);
+        }
+       
+        
+    }   
+    
+    
+    footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils,
+    footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping{
+        
+        padding-right: 1rem;
+        font-size: small;
+        
+    }
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
+@media all and (min-width: 401px) and (max-width:760px) {
+
+    .wrapper{
+
+        min-width: 401px;
+        max-width: 760px; /*Un point d'arrêt fluide */
+        margin: 0px 22px; /*Pour centrer les éléments: 
+        je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+                    
+
+    }
+
+    /*------------mainContent------------*/
+
+
+    #Menu{
+
+            header i.far.fa-heart{
+
+                margin-right: 1rem;
+            }
+
+            div.wrapper-grid section.entrees header::after, 
+            div.wrapper-grid section.plats header::after, 
+            div.wrapper-grid section.desserts header::after{
+
+                margin-right: 21.5rem;
+            }
+
+            div.wrapper-grid section.entrees div.card,
+            div.wrapper-grid section.plats div.card,
+            div.wrapper-grid section.desserts div.card
+            {
+
+                margin-right: 1rem;
+            }
+
+            div.wrapper-grid button{
+
+                margin: 3rem 3rem 5.5rem 4.5rem;
+            }
+
+        }    /*END OF #Menu*/
+
+}    /*END OF MEDIA QUERY*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
+    
+@media all and (min-width: 761px) and (max-width: 1024px){
+
+            .wrapper{
+
+                min-width: 761px;
+                max-width: 1024px; /*Un point d'arrêt fluide */
+                margin: 0px 22px; /*Pour centrer les éléments: 
+                je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+                            
+
+            }
+
+        /*-----------header-------------*/
+
+        #header{
+
+            display: flex;
+            justify-content: center;
+        }
+        
+        .button-group1 li.logo {
+
+            padding: 1.5rem 10rem 0.2rem 10rem;
+        }
+
+
+        /*-----------secondHeader-------------*/
+
+
+        #secondHeader div.container img{
+
+            height: 400px ;
+        }
+
+
+        /*----------mainContent-----------*/
+
+
+        #Menu{
+
+         
+                header i.far.fa-heart{
+
+                    margin-right: 2rem;
+                }
+
+                div.wrapper-grid section.entrees header:after,        
+                div.wrapper-grid section.desserts header:after{
+
+                    margin-left: -8rem;
+                    margin-right: 42.9rem;
+                    width: 10%;
+                    
+                }
+
+                div.wrapper-grid section.plats header:after{
+
+                    margin-right: 45rem;
+                    margin-left: -3rem;
+                    width: 20%;
+
+                }
+
+                div.wrapper-grid section.entrees div.card,
+                div.wrapper-grid section.plats div.card,
+                div.wrapper-grid section.desserts div.card
+                {
+                    margin-right: 2rem;
+                }
+
+      
+
+                div.wrapper-grid button{
+
+                    margin: 3rem 3rem 5.5rem 15rem;
+                }
+            } /*END OF #Menu*/
+
+
+        /*-----------footer-------------*/
+
+        .footer{
+
+            display: flex;
+            justify-content: center;    
+
+            ul li h2{
+    
+                font-size: 250%;
+            }  
+        
+           }
+
+
+        footer.wrapper div.container{
+
+            display: flex;
+            justify-content: center;  
+            
+            }
+    
+        
+          
+
+       
+
+
+} /*END OF MEDIA QUERY*/
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
+       
+     
+@media all and (min-width: 1025px) and (max-width: 1600px){
+
+    .wrapper{
+
+        min-width: 1025px;
+        max-width: 1600px; /*Un point d'arrêt fluide */
+        margin: 0px 22px; /*Pour centrer les éléments: 
+        je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+                      
+
+    }
+
+     /*-----------header-------------*/
+
+    #header{
+
+        display: flex;
+        justify-content: center;
+        }
+
+    /*-----------secondHeader-------------*/
+
+
+    #secondHeader div.container img{
+
+        height: 600px ;
+    }    
+
+
+
+      /*--------------mainContent------------*/
+
+
+    #Menu{
+
+
+            header{
+
+                margin-right: 3rem;
+                margin-left: 1rem;
+            }
+
+            div.wrapper-grid button{
+
+                margin: 3rem 1rem 5.5rem 36rem;
+                font-size: x-large;
+
+            }
+
+
+            div.wrapper-grid section.entrees header::after,
+            div.wrapper-grid section.plats header::after,
+            div.wrapper-grid section.desserts header::after{
+
+                content: "";
+                display: block;
+                margin-right: 84rem;
+                margin-left: -8rem;
+                margin-top: 0.5rem;
+                width: 5%;
+                padding-top: 20px;
+                border-bottom: 3px solid #99E2D0;
+            }
+
+        } /*END OF #Menu*/
+
+
+    /*-----------footer-------------*/
+
+    .footer{
+
+        display: flex;
+        justify-content: center;    
+    }
+
+    footer.wrapper div.container{
+
+        display: flex;
+        justify-content: center;  
+    }
+
+
+    #mentionsLegales{
+
+
+            ul li h2{
+
+                font-size: 400%;
+                
+            }
+
+            ul li.button{
+
+                font-size: 200%;
+            }
+
+        
+            ul li.button a i.fas.fa-hands-helping::before,
+            ul li.button a i.fas.fa-utensils::before{
+
+                font-size: 200%;
+            }
+
+    }    /*END OF #mentionsLegales */
+
+}    /*END OF #MEDIA QUERY*/
