@@ -200,6 +200,7 @@ header nav ul li.logo {
   top: 60px;
   height: 70px;
   border-radius: 0 20px 20px 0;
+  display: none;
 }
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation1{  
   display: flex;
@@ -213,6 +214,7 @@ header nav ul li.logo {
   top: 138px;
   height: 70px;
   border-radius: 0 20px 20px 0;
+  display: none;
 }
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation2{
   display: flex;
@@ -226,6 +228,7 @@ header nav ul li.logo {
   top: 216px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation3{
   display: flex;
@@ -239,6 +242,7 @@ header nav ul li.logo {
   top: 293px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description div.animation4{
   display: flex;
@@ -252,6 +256,7 @@ header nav ul li.logo {
   top: 73px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description div.animation5{
   display: flex;
@@ -265,6 +270,7 @@ header nav ul li.logo {
   top: 151px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description div.animation6{
   display: flex;
@@ -278,6 +284,7 @@ header nav ul li.logo {
   top: 228px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description div.animation7{
   display: flex;
@@ -291,6 +298,7 @@ header nav ul li.logo {
   top: 73px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description div.animation8{
   display: flex;
@@ -304,6 +312,7 @@ header nav ul li.logo {
   top: 151px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description div.animation9{
   display: flex;
@@ -317,6 +326,7 @@ header nav ul li.logo {
   top: 228px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation div.icon,
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation1 div.icon,

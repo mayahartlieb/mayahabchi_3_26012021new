@@ -187,19 +187,18 @@ header nav ul li.logo {
   ma div va adopter les deux comportements en même temps 'backwards et forwards'*/
   /*animation-timing-function: ease-in-out: démarre lentement, accélère puis ralenti à la fin*/
 }
-
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation{
   display: flex;
   background-color: #99e2d0;
   width: 4rem;
   align-items: center;
   justify-content: center;
-  transition-duration: .5s;
   position: absolute;
   right: 0;
   top: 60px;
   height: 70px;
   border-radius: 0 20px 20px 0;
+  display: none;
 }
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation1{
   display: flex;
@@ -207,12 +206,12 @@ header nav ul li.logo {
   width: 4rem;
   align-items: center;
   justify-content: center;
-  transition-duration: .5s;
   position: absolute;
   right: 0;
   top: 138px;
   height: 70px;
   border-radius: 0 20px 20px 0;
+  display: none;
 }
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation2{
   display: flex;
@@ -220,12 +219,12 @@ header nav ul li.logo {
   width: 4rem;
   align-items: center;
   justify-content: center;
-  transition-duration: .5s;
   position: absolute;
   right: 0;
   top: 216px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description div.animation3{
   display: flex;
@@ -233,12 +232,12 @@ header nav ul li.logo {
   width: 4rem;
   align-items: center;
   justify-content: center;
-  transition-duration: .5s;
   position: absolute;
   right: 0;
   top: 73px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description div.animation4{
   display: flex;
@@ -246,12 +245,12 @@ header nav ul li.logo {
   width: 4rem;
   align-items: center;
   justify-content: center;
-  transition-duration: .5s;
   position: absolute;
   right: 0;
   top: 151px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description div.animation5{
   display: flex;
@@ -259,12 +258,12 @@ header nav ul li.logo {
   width: 4rem;
   align-items: center;
   justify-content: center;
-  transition-duration: .5s;
   position: absolute;
   right: 0;
   top: 228px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description div.animation6{
   display: flex;
@@ -272,12 +271,12 @@ header nav ul li.logo {
   width: 4rem;
   align-items: center;
   justify-content: center;
-  transition-duration: .5s;
   position: absolute;
   right: 0;
   top: 73px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description div.animation7{
   display: flex;
@@ -285,12 +284,12 @@ header nav ul li.logo {
   width: 4rem;
   align-items: center;
   justify-content: center;
-  transition-duration: .5s;
   position: absolute;
   right: 0;
   top: 151px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description div.animation8{
   display: flex;
@@ -298,12 +297,12 @@ header nav ul li.logo {
   width: 4rem;
   align-items: center;
   justify-content: center;
-  transition-duration: .5s;
   position: absolute;
   right: 0;
   top: 228px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation div.icon,
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation1 div.icon,
@@ -321,42 +320,64 @@ header nav ul li.logo {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: .5s;
+  transform: rotate(180deg);  
+}
+#Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description:hover div.animation{
+  display:flex;
+  animation: slideIn 0.1s 0ms backwards linear;
+   /*animation: [name] [durée] [délai] [fill-mode] [timing-function] */  
+}
+#Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description:hover div.animation div.icon{
+  transform: rotate(360deg);
+  animation: rotateIcon 300ms 100ms linear;
+}
+#Menu div.wrapper-grid section.entrees div.card div.card__body:hover{
+  border-radius:19px 0 0 19px;
+  width:95%;
+  animation: movePrice 0.7s 0ms forwards linear;
+}
+@keyframes movePriceDiv{
+  from{
+    translateX: (0%);
+  }
+  to{
+    translateX: (-5%);
+  }
 }
 @keyframes fadeIn{
   0% {
       opacity: 0;
-      transform: translateY(10px); /*on va démarrer à 10px, plus bas donc que la postion normale  */
+      transform: translateY(10px); /*on va démarrer à 10px, plus bas donc que la position normale  */
   }
   100% {
       opacity: 1;/*cet élément va devenir complètement opaque au fur et à mesure de l'évolution de l'animation*/
       transform: translateY(0);/*cette transformation va amener l'élément à sa place */ 
   }
 }
-@keyframes turn{
+@keyframes slideIn{
   0% {
-      transform: translateX(-50%) rotate(0deg);
-      opacity: 1;
-  }
-  50% {
-      transform: translateX(-50%) rotate(180deg);
-      opacity: 1;
-  }
-  77% {
-      transform: translateX(-50%) rotate(360deg);
-      opacity: 0.9;
-  }
-  81% {
-      transform: translateX(-50%) rotate(0deg);
-      opacity: 0.8;
-  }
-  100% {
-      transform: translateX(-50%) rotate(40deg);
+      transform: translateX(100%);
       opacity: 0;
   }
+  50% {
+      transform: translateX(50%);
+      opacity: 0.5;
+  }
+  100% {
+      transform: translateX(0%);
+      opacity: 1;
+  }
 }
-
+@keyframes rotateIcon{
+  0% {
+    transform:  rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+      transform: rotate(360deg);
+      opacity: 1;
+  } 
+}
 /*END OF #MENU */
 /*----------footer-----------*/
 .footer {
@@ -385,7 +406,6 @@ header nav ul li.logo {
   font-size: medium;
   font-weight: 400;
 }
-
 /*END OF .footer */
 footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils,
 footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {

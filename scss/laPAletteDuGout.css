@@ -179,24 +179,13 @@ header nav ul li.logo {
 #Menu div.wrapper-grid section.entrees,
 #Menu div.wrapper-grid section.plats,
 #Menu div.wrapper-grid section.desserts{        
-  animation: fadeIn 1000ms 200ms both ease-in-out; 
+  animation: fadeIn 1000ms 400ms both ease-in-out; 
   /*animation: [name] [durée] [délai] [fill-mode] [timing-function] ; 
   l'ordre pour la pluspart de ces fonctions n'a pas d'importance sauf pour le délai et la durée */
   /*animation-fill-mode: both : ma div va adopter la position du keyframe '0%' avant le début de l'animation  
   et ensuite mon animation va garder la position ici définie par la keyframe à 100% même quand l'animation est finie, 
   ma div va adopter les deux comportements en même temps 'backwards et forwards'*/
   /*animation-timing-function: ease-in-out: démarre lentement, accélère puis ralenti à la fin*/
-}
-#Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation div.icon{
-  height: 1.6rem;
-  width: 1.6rem;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: .5s;
 }
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation{
   display: flex;
@@ -210,6 +199,7 @@ header nav ul li.logo {
   top: 60px;
   height: 70px;
   border-radius: 0 20px 20px 0;
+  display: none;
 }
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation1{
   display: flex;
@@ -223,6 +213,7 @@ header nav ul li.logo {
   top: 138px;
   height: 70px;
   border-radius: 0 20px 20px 0;
+  display: none;
 }
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation2{
   display: flex;
@@ -236,6 +227,7 @@ header nav ul li.logo {
   top: 216px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description div.animation3{
   display: flex;
@@ -249,6 +241,7 @@ header nav ul li.logo {
   top: 73px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description div.animation4{
   display: flex;
@@ -262,6 +255,7 @@ header nav ul li.logo {
   top: 151px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description div.animation5{
   display: flex;
@@ -275,6 +269,7 @@ header nav ul li.logo {
   top: 228px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description div.animation6{
   display: flex;
@@ -288,6 +283,7 @@ header nav ul li.logo {
   top: 73px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description div.animation7{
   display: flex;
@@ -301,6 +297,7 @@ header nav ul li.logo {
   top: 151px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description div.animation8{
   display: flex;
@@ -314,6 +311,7 @@ header nav ul li.logo {
   top: 228px;
   height: 70px;
   border-radius: 0 20px 20px 0; 
+  display: none;
 }
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation div.icon,
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation1 div.icon,

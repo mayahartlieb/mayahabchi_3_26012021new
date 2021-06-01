@@ -283,7 +283,7 @@ img {
         div.wrapper-grid section.entrees,
         div.wrapper-grid section.plats,
         div.wrapper-grid section.desserts{        
-         animation: fadeIn 1000ms 200ms both ease-in-out; 
+         animation: fadeIn 1000ms 400ms both ease-in-out; 
          /*animation: [name] [durée] [délai] [fill-mode] [timing-function] ; 
          l'ordre pour la pluspart de ces fonctions n'a pas d'importance sauf pour le délai et la durée */
          /*animation-fill-mode: both : ma div va adopter la position du keyframe '0%' avant le début de l'animation  
@@ -306,6 +306,7 @@ img {
             top: 60px;
             height: 70px;
             border-radius: 0 20px 20px 0;
+            display: none;
 
         }
 
@@ -322,6 +323,7 @@ img {
             top: 138px;
             height: 70px;
             border-radius: 0 20px 20px 0;
+            display: none;
 
         }
 
@@ -338,6 +340,7 @@ img {
             top: 216px;
             height: 70px;
             border-radius: 0 20px 20px 0; 
+            display: none;
 
         }
 
@@ -354,6 +357,7 @@ img {
             top: 73px;
             height: 70px;
             border-radius: 0 20px 20px 0; 
+            display: none;
 
         }
 
@@ -370,6 +374,7 @@ img {
             top: 151px;
             height: 70px;
             border-radius: 0 20px 20px 0; 
+            display: none;
 
         }
 
@@ -386,6 +391,7 @@ img {
             top: 228px;
             height: 70px;
             border-radius: 0 20px 20px 0; 
+            display: none;
 
         }
 
@@ -402,6 +408,7 @@ img {
             top: 73px;
             height: 70px;
             border-radius: 0 20px 20px 0; 
+            display: none;
 
         }
 
@@ -418,6 +425,7 @@ img {
             top: 151px;
             height: 70px;
             border-radius: 0 20px 20px 0; 
+            display: none;
 
         }
         
@@ -434,6 +442,7 @@ img {
             top: 228px;
             height: 70px;
             border-radius: 0 20px 20px 0; 
+            display: none;
 
         }
 
@@ -456,7 +465,7 @@ img {
             border-radius: 100px;
             transform: rotate(180deg);
             transition-duration: .5s;
-            
+
         }
 
 

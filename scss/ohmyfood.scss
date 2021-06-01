@@ -337,7 +337,18 @@ Couleur Tertaire   #99E2D0
         section.wrapper div.row a:active .fa-store{
 
         color: $primary-color ;
-      }
+        }
+
+        section.wrapper div.row a:hover{
+            background-color: #e4d5f6;
+        }
+
+        section.wrapper div.row a:hover .fas.fa-mobile-alt::before,
+        section.wrapper div.row a:hover .fas.fa-list::before,
+        section.wrapper div.row a:hover .fas.fa-store::before
+        {
+        color:#9356DC;
+        }
      
     }  
      
@@ -412,7 +423,7 @@ Couleur Tertaire   #99E2D0
             font-size: large;
         }
 
-        div.wrapper-grid div.card div.card__body div i.far.fa-heart{
+        div.wrapper-grid div.card div.card__body div i.fas.fa-heart{
 
             position: relative;
             top: 120px;
@@ -440,8 +451,8 @@ Couleur Tertaire   #99E2D0
 
         }
 
-        div.wrapper-grid div.card div.card__body.LeDeliceDesSens div i.far.fa-heart,
-        div.wrapper-grid div.card div.card__body.ALaFrancaise div i.far.fa-heart{
+        div.wrapper-grid div.card div.card__body.LeDeliceDesSens div i.fas.fa-heart,
+        div.wrapper-grid div.card div.card__body.ALaFrancaise div i.fas.fa-heart{
 
         top: 140px;
 
@@ -455,14 +466,14 @@ Couleur Tertaire   #99E2D0
         }
          
     }
-
+    
     .fa-heart{
 
         cursor: pointer;
     }
 
      /*if hover, background-color: #c065db */  
-    .heart:hover .far.fa-heart::before{
+    .heart:hover .fas.fa-heart::before{
 
         color: #c065db;
         background: #c065db;
