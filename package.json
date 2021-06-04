@@ -1,0 +1,19 @@
+{
+  "name": "projet3new",
+  "version": "1.0.0",
+  "description": "projet 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayahartlieb/mayahabchi_3_26012021new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayahartlieb/mayahabchi_3_26012021new/issues"
+  },
+  "homepage": "https://github.com/mayahartlieb/mayahabchi_3_26012021new#readme"
+}

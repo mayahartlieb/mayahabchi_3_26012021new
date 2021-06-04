@@ -11,6 +11,7 @@ Couleur Tertaire   #99E2D0
 Mes Polices
 Logo et titres: Shrikhand
 Texte: Roboto
+
 */
 body {
   background-color: #FFFFFF;
@@ -49,9 +50,9 @@ img {
   /*Pour centrer les éléments: 
   je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
 }
-/*-----------LOADER----------*/
 
-.loader_background{
+/*-----------LOADER----------*/
+.loader_background {
   z-index: 3;
   position: absolute;
   background: rgba(153, 226, 208, 0.5);
@@ -62,14 +63,16 @@ img {
   left: 0;
   opacity: 0;
   transform-origin: top;
-  transform: scale(0); /*The scale() method increases or decreases the size of an element (according to the parameters given for the width and height)*/
+  transform: scale(0);
+  /*The scale() method increases or decreases the size of an element (according to the parameters given for the width and height)*/
   animation: loaderBackground 4s;
-  }
-  .loader_spinner{
+}
+
+.loader_spinner {
   z-index: 4;
   position: fixed;
   border: solid 15px transparent;
-  border-radius: 50%;  
+  border-radius: 50%;
   opacity: 0;
   height: 150px;
   width: 150px;
@@ -78,72 +81,74 @@ img {
   border-right-color: #9356dc;
   border-top-color: #9356dc;
   animation: rotate 3s forwards linear;
-  }
-  .loader_spinner::before{
-    content: "";
-    z-index: 4;
-    border: solid 15px transparent;
-    border-right-color: #ff79da;
-    border-top-color: #ff79da;
-    height: 120px;
-    width: 120px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    border-radius: 50%;
-    animation: rotate 3s 250ms forwards linear;
-  }
-  .loader_spinner::after{
-    content: "";
-    z-index: 4;
-    border-radius: 50%;
-    border: solid 15px transparent;
-    border-right-color: #99e2D0;
-    border-top-color: #99e2D0;
-    z-index: 3;
-    height: 90px;
-    width: 90px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    opacity: 0;
-    animation: rotate 3s 500ms forwards linear;
-  }
-  @keyframes loaderBackground {
-    0% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    100%{
-      opacity: 0;
-      transform: scale(0);
-      display: none;
-    }
-  }
-  @keyframes rotate{
-    0% {
-      opacity: 1;
-      transform: rotate(180deg);
-    }
-    50%{
-      opacity:0.5;
-      transform: rotate(540deg)
-    }
-    100%{
-      transform: rotate(720deg);
-      opacity: 0;
-      display: none;
-    }
-  }
+}
 
+.loader_spinner::before {
+  content: "";
+  z-index: 4;
+  border: solid 15px transparent;
+  border-right-color: #ff79da;
+  border-top-color: #ff79da;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  border-radius: 50%;
+  animation: rotate 3s 250ms forwards linear;
+}
+
+.loader_spinner::after {
+  content: "";
+  z-index: 4;
+  border-radius: 50%;
+  border: solid 15px transparent;
+  border-right-color: #99e2D0;
+  border-top-color: #99e2D0;
+  z-index: 3;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+  animation: rotate 3s 500ms forwards linear;
+}
+
+@keyframes loaderBackground {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+    display: none;
+  }
+}
+@keyframes rotate {
+  0% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotate(540deg);
+  }
+  100% {
+    transform: rotate(720deg);
+    opacity: 0;
+    display: none;
+  }
+}
 /*----------HEADER-----------*/
 #header {
   border-bottom: 1px solid #f2f2f2;
   background-color: #FFFFFF;
   /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [color];*/
   box-shadow: 0px 0px 5px 0 #888888;
-  /*margin-bottom: 2px;*/
+  /*margin-bottom: 2px;  */
 }
 
 header nav ul li.logo {
@@ -277,9 +282,7 @@ input {
 #secondNav section.wrapper div.row a:active {
   background-color: #f5edff;
 }
-#secondNav section.wrapper div.row a:active i.fas.fa-store::before, 
-#secondNav section.wrapper div.row a:active i.fas.fa-list::before, 
-#secondNav section.wrapper div.row a:active i.fas.fa-mobile-alt::before {
+#secondNav section.wrapper div.row a:active i.fas.fa-store::before, #secondNav section.wrapper div.row a:active i.fas.fa-list::before, #secondNav section.wrapper div.row a:active i.fas.fa-mobile-alt::before {
   color: #9356DC;
 }
 #secondNav section.wrapper div.row a i.fas.fa-store,
@@ -295,14 +298,13 @@ input {
 #secondNav section.wrapper div.row a:active .fa-store {
   color: #9356DC;
 }
-#secondNav section.wrapper div.row a:hover{
+#secondNav section.wrapper div.row a:hover {
   background-color: #e4d5f6;
 }
 #secondNav section.wrapper div.row a:hover .fas.fa-mobile-alt::before,
 #secondNav section.wrapper div.row a:hover .fas.fa-list::before,
-#secondNav section.wrapper div.row a:hover .fas.fa-store::before
-{
-  color:#9356DC;
+#secondNav section.wrapper div.row a:hover .fas.fa-store::before {
+  color: #9356DC;
 }
 
 .circle {
@@ -319,6 +321,7 @@ input {
   margin-right: 1rem;
   margin-left: -2.5rem;
 }
+
 /*----------mainContent-----------*/
 #mainContent {
   background-color: #f2f2f2;
@@ -335,6 +338,7 @@ input {
   top: 160px;
   padding-left: 0.9rem;
 }
+#Restaurants div.wrapper-grid a div.card div.card__body span.nouveau,
 #Restaurants div.wrapper-grid div.card div.card__body span.nouveau {
   color: #088F8F;
   background-color: #99E2D0;
@@ -352,19 +356,7 @@ input {
   padding-bottom: 0.2rem;
   font-size: large;
 }
-#Restaurants div.wrapper-grid div.card div.card__body div i.fas.fa-heart{
-  position: relative;
-  top: 120px;
-  display: flex;
-  justify-content: flex-end;
-  flex-flow: row;
-  right: 20px;
-  font-weight: 300;
-  font-size: x-large;
-  color: #817c7a;
-  cursor: pointer;
-}
-#Restaurants div.wrapper-grid div.card div.card__body div i.far.fa-heart{
+#Restaurants div.wrapper-grid div.card div.card__body div i.fas.fa-heart {
   position: relative;
   top: 120px;
   display: flex;
@@ -384,98 +376,24 @@ input {
   top: 175px;
 }
 #Restaurants div.wrapper-grid div.card div.card__body.LeDeliceDesSens div i.fas.fa-heart,
-#Restaurants div.wrapper-grid div.card div.card__body.ALaFrancaise div i.fas.fa-heart{
+#Restaurants div.wrapper-grid div.card div.card__body.ALaFrancaise div i.fas.fa-heart {
   top: 140px;
 }
-#Restaurants div.wrapper-grid div.card div.card__body.LeDeliceDesSens div i.far.fa-heart,
-#Restaurants div.wrapper-grid div.card div.card__body.ALaFrancaise div i.far.fa-heart{
-  top: 140px;
-}
-#Restaurants div.wrapper-grid a div.card div.card__body div.heart{
+#Restaurants div.wrapper-grid a div.card div.card__body div.heart {
   cursor: pointer;
   position: relative;
 }
-#Restaurants div.wrapper-grid a div.card div.card__body.laNoteEnchantee div.heart{
-  color: pink;
-}
-.heart1{
-  position: absolute;
-  width:15px;
-  height: 15px;
-  background:white;
-  right: 20px;
-  top:190px;
-  border-bottom: 1px solid #817c7a;
-  border-right:1px solid #817c7a;
-  transform: rotate(45deg);
-}
-.heart1:before{
-  content:'';
-  position: absolute;
-  top:-8px;
-  width:13px;
-  height:8px;
-  background:white;
-  border-top-left-radius:10px;
-  border-top-right-radius:10px;
-  border-left: 1px solid #817c7a;
-  border-right:1px solid #817c7a;
-}
-.heart1:after{
-  content:'';
-  position: absolute;
-  left:-8px;
-  width:8px;
-  height:13px;
-  background: white;
-  border-top-left-radius:10px;
-  border-bottom-left-radius:10px;
-  border-top: 1px solid #817c7a;
-  border-bottom: 1px solid #817c7a;
-}
-.heart1:hover{
-  background:linear-gradient(#ff79da, #c466db);
-  border: none;
-  width:13px;
-  height: 13px;
 
-}
-.heart1:hover::before{
-  background: linear-gradient(#ff79da, #c466db);
-  /*border-left: 1px solid #FF79DA ;
-  border-right:1px solid #FF79DA;*/
-  border: none;
-  top: -7px;
-}
-.heart1:hover::after{
-  background: linear-gradient(#ff79da, #c466db);
-  /*border-top: 1px solid #FF79DA;
-  border-bottom: 1px solid #FF79DA;*/
-  border:none;
-  left: -7px;
-}
-.heart2{
-  display:none;
-}
 .fa-heart {
   cursor: pointer;
 }
-/*if hover,.fas.fa-heart::before,  background-color: #c065db or linear-gradient(#ff79da, #c466db) */
+
+/*if hover, background-color: #c065db */
 .heart:hover .fas.fa-heart::before {
   color: #c065db;
- /* background: #c065db;*/
- background-clip: text;
- text-emphasis-color: transparent;
- background-color: #c065db;
- fill: blue;
+  background: #c065db;
 }
-i.fas.fa-heart:hover{
-  fill: blue;
-}
-.heart:hover{
-  display: initial;
-  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
-}
+
 .card {
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -488,6 +406,7 @@ i.fas.fa-heart:hover{
   min-height: 235px;
   margin-bottom: 1.2rem;
 }
+
 .wrapper-grid div.card__body.laPaletteDuGout {
   background-image: url(../images/restaurants/laPaletteDuGout.jpg);
   object-fit: cover;
@@ -497,6 +416,7 @@ i.fas.fa-heart:hover{
   background-size: cover;
   background-position: bottom;
 }
+
 .wrapper-grid div.card__body.laNoteEnchantee {
   background-image: url(../images/restaurants/laNoteEnchantee.jpg);
   object-fit: cover;
@@ -506,6 +426,7 @@ i.fas.fa-heart:hover{
   background-size: cover;
   background-position: center;
 }
+
 .wrapper-grid div.card__body.ALaFrancaise {
   background-image: url(../images/restaurants/ALaFrancaise.jpg);
   object-fit: cover;
@@ -515,6 +436,7 @@ i.fas.fa-heart:hover{
   background-size: cover;
   background-position: center;
 }
+
 .wrapper-grid div.card__body.LeDeliceDesSens {
   background-image: url(../images/restaurants/leDeliceDesSens.jpg);
   object-fit: cover;
@@ -524,6 +446,7 @@ i.fas.fa-heart:hover{
   background-size: cover;
   background-position: center;
 }
+
 /*----------footer-----------*/
 .footer {
   background-color: #353535;
@@ -551,14 +474,17 @@ i.fas.fa-heart:hover{
   font-size: medium;
   font-weight: 400;
 }
+
 footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils {
   padding-right: 1rem;
   font-size: small;
 }
+
 footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {
   padding-right: 1rem;
   font-size: small;
 }
+
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media all and (min-width: 401px) and (max-width: 760px) {
@@ -702,8 +628,8 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
     display: flex;
     justify-content: center;
   }
-  #Restaurants  div.wrapper-grid a div.card div.card__body.laPaletteDuGout span.nouveau,
-  #Restaurants div.wrapper-grid a div.card div.card__body.laNoteEnchantee span.nouveau {
+  #Restaurants div.wrapper-grid a div.card div.card__body.laPaletteDuGout span.nouveau,
+#Restaurants div.wrapper-grid a div.card div.card__body.laNoteEnchantee span.nouveau {
     left: 57.5rem;
     top: 15px;
   }

@@ -1,0 +1,27 @@
+.card__body{
+    display: flex;
+    width: 100%;
+    padding:0!important;
+}
+.menuDescription{
+    width: 70%;
+}
+.menuPrix{
+    width: 10%;
+    transform: translateX(200%);
+    text-align: right;
+    transition: transform 400ms;
+}
+.menuCoche{
+    width: 20%;
+    background-color: #99e2d0;
+    transform: scaleX(0);
+    transform-origin: center right;
+    transition: transform 400ms;
+}
+.card__body:hover .menuPrix{
+    transform: translateX(0);
+}
+.card__body:hover .menuCoche{
+    transform: scaleX(100%);
+}
