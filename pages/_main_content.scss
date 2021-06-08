@@ -1,0 +1,178 @@
+
+
+    #mainContent{
+
+        background-color: $mainContent-background-color;
+        padding-top: 3.9rem;
+        padding-bottom: 3.9rem;
+
+    }
+
+    #Restaurants{
+
+        header h1{
+
+            color: $darker-text-color;
+            padding-bottom: 1.2rem;
+        }
+
+        div.wrapper-grid div.card div.card_body_part1{
+
+            position: relative;
+            top: 160px;
+            padding-left: 0.9rem;
+        }
+        
+        div.wrapper-grid a div.card div.card__body span.nouveau,
+        div.wrapper-grid div.card div.card__body span.nouveau{
+
+        color: $green-button-color;
+        background-color: $tertiary-color;
+        position: relative;
+        left: 225px;
+        top: 13px;
+        padding: 5px 12px;
+        border: none;
+        border-radius: 2px;
+        font-weight: map-get($font-weights, bold);
+
+        }
+
+        div.wrapper-grid div.card div.card__body div.card_body_part1 h3.card__title{
+
+            color: $darker-text-color;
+            font-weight: map-get($font-weights, bold);
+            padding-bottom: 0.2rem;
+            font-size: large;
+        }
+
+        div.wrapper-grid div.card div.card__body div i.fas.fa-heart{
+
+            position: relative;
+            top: 120px;
+            display: flex;
+            justify-content: flex-end;
+            flex-flow: row;
+            right: 20px;
+            font-weight:  map-get($font-weights, small);
+            font-size: x-large;
+            color: $heart-icon-border-color;
+            cursor: pointer;                
+                    
+        }
+
+      
+        div.wrapper-grid div.card div.card__body div.card_body_part1 div.card__description p{
+
+            font-weight:  map-get($font-weights, regular);
+        }
+
+        div.wrapper-grid div.card div.card__body.LeDeliceDesSens div.card_body_part1,
+        div.wrapper-grid div.card div.card__body.ALaFrancaise div.card_body_part1{
+
+        top: 175px;
+
+        }
+
+        div.wrapper-grid div.card div.card__body.LeDeliceDesSens div i.fas.fa-heart,
+        div.wrapper-grid div.card div.card__body.ALaFrancaise div i.fas.fa-heart{
+
+        top: 140px;
+
+        }
+        
+        div.wrapper-grid a div.card div.card__body div.heart{
+
+        cursor: pointer;      
+        position: relative;
+            
+        }
+         
+    }
+    
+    .fa-heart{
+
+        cursor: pointer;
+    }
+
+     /*if hover, background-color: #c065db */  
+    .heart:hover .fas.fa-heart::before{
+
+        color: #c065db;
+        background: #c065db;
+        
+    }
+    
+   
+    .card{
+    
+        overflow: hidden;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 1rem;
+        cursor: pointer;
+        /*ease-in - specifies a transition effect with a slow start*/
+        transition: transform 200ms ease-in;
+        /*Transition effects are animation options*/
+        background: $main-background-color;
+        min-height: 235px;
+        margin-bottom: 1.2rem;
+    }
+    
+    
+    .wrapper-grid div.card__body.laPaletteDuGout{
+    
+        background-image: url(../images/restaurants/laPaletteDuGout.jpg);
+        object-fit: cover;
+        height:165px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+               
+    
+    }
+    
+  
+    
+    .wrapper-grid div.card__body.laNoteEnchantee{
+    
+        background-image: url(../images/restaurants/laNoteEnchantee.jpg);
+        object-fit: cover;
+        height:165px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    
+    .wrapper-grid div.card__body.ALaFrancaise{
+    
+        background-image: url(../images/restaurants/ALaFrancaise.jpg);
+        object-fit: cover;
+        height:165px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+   
+    
+    .wrapper-grid div.card__body.LeDeliceDesSens{
+    
+        background-image: url(../images/restaurants/leDeliceDesSens.jpg);
+        object-fit: cover;
+        height:165px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    
+    
+    
+    
+    

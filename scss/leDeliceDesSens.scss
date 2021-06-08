@@ -1,3 +1,7 @@
+@import "../base/normes";
+@import "../utils/variables";
+@import "../componants/boutons";
+
 /*
 MA PALETTE DE COULEURS :
 Couleur primaire   #9356DC
@@ -45,47 +49,6 @@ Mes Polices
 Logo et titres: Shrikhand
 Texte: Roboto
 */
-
-body {
-
-    background-color: $main-background-color;
-    font-family: 'Roboto', sans-serif;
-    color: $text-color;	
-    font-weight: map-get($font-weights, bold);
-
-}
-
-      
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-}
-
-ul {
-    /*I want to remove all the bullet points */
-    list-style-type: none; 
-
-}
-
-a, span {
-    /*I want to remove my underlines*/
-    text-decoration: none;
-    color: $text-color;
-}
-
-
-
-img {
-
-    /*I want my images to fit in the container*/
-    width: 100%;
-}
-
- 
-
-
 
 .wrapper{
         
@@ -231,22 +194,6 @@ img {
 
                 display: flex;
                 justify-content: space-between;
-        }
-
-
-   
-        div.wrapper-grid button{
-
-                border-radius: 30px;
-                padding: 0.7rem 2.9rem 0.7rem 2.9rem;
-                color: #FFFFFF;
-                background-color: #FF79DA;
-                font-size: medium;
-                margin: 3rem 3rem 5.5rem 3.5rem;
-                background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-                box-shadow: 2px 2px 7px 0px #888888;
-                border: 2px;
-        
         }
 
 
@@ -707,6 +654,8 @@ img {
      
 @media all and (min-width: 1025px) and (max-width: 1600px){
 
+    @import "../layouts/footer";
+
     .wrapper{
 
         min-width: 1025px;
@@ -771,43 +720,5 @@ img {
 
     } /*END OF #Menu*/
 
-    /*-----------footer-------------*/
-
-    .footer{
-
-        display: flex;
-        justify-content: center;    
-    }
-
-    footer.wrapper div.container{
-
-        display: flex;
-        justify-content: center;  
-    }
-
-    #mentionsLegales{
-
-
-        ul li h2{
-
-            font-size: 400%;
-            
-        }
-
-        ul li.button{
-
-            font-size: 200%;
-        }
-
    
-        ul li.button a i.fas.fa-hands-helping::before,
-        ul li.button a i.fas.fa-utensils::before{
-
-            font-size: 200%;
-        }
-
-
-
-} /*END OF #mentionsLegales */
-
 } /*END OF MEDIA QUERY */

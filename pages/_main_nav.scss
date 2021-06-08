@@ -1,0 +1,43 @@
+#mainNav{
+    
+    background-color: $third-background-color;
+
+    div.row{
+
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    div.row h2{
+
+        color: $darker-text-color;
+        padding: 2.3rem 2rem 0.9rem 2rem;
+        font-family: 'Roboto', sans-serif;
+       
+    }
+
+    div.row p{
+
+        font-size: large;
+        font-weight: map-get($font-weights, regular);
+        color: $placeholder-color;
+        padding-bottom: 2rem;
+    }
+
+    div.row button{
+
+        border-radius: 30px;
+        padding: 1rem 1rem 1rem 1rem;
+        color: $mainNav-button-color;
+        background-color: $secondary-color;
+        font-size: medium;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        border: 2px;
+        background: linear-gradient($secondary-color, $primary-color);
+        box-shadow: 2px 2px 7px 0px $box-shadow-color;
+    }
+    
+}

@@ -1,0 +1,39 @@
+ /*-----------footer-------------*/
+
+ .footer{
+
+    display: flex;
+    justify-content: center;    
+
+
+    }
+
+    footer.wrapper div.container{
+
+    display: flex;
+    justify-content: center;  
+    
+    }
+
+    #mentionsLegales{
+
+        ul li h2{
+
+            font-size: 400%;
+            
+        }
+
+        ul li.button{
+
+            font-size: 200%;
+        }
+
+        ul li.button a i.fas.fa-hands-helping::before,
+        ul li.button a i.fas.fa-utensils::before{
+
+        font-size: 200%;
+    }
+    
+    }
+
+

@@ -1,0 +1,304 @@
+@import "../base/normes"; /*---box sizing -----------*/
+@import "../utils/variables";
+@import "../utils/font_weights";   /*MAPS*/
+@import "../pages/main_loader"; /*-----------LOADER----------*/
+@import "../pages/main_header"; /*----------HEADER-----------*/
+@import "../pages/main_secondHeader"; /*----------secondHEADER-----------*/
+@import "../pages/main_nav";  /*----------mainNav-----------*/
+@import "../pages/main_secondNav";    /*-----------secondNav--------------*/
+@import "../pages/main_content";    /*----------mainContent-----------*/
+@import "../pages/main_footer";    /*----------footer-----------*/  
+    
+ 
+    
+    /*
+    Mes Polices
+    Logo et titres: Shrikhand
+    Texte: Roboto
+    
+    */
+ 
+    .wrapper{
+        
+        min-width: 320px;
+        max-width: 400px; /*Un point d'arrêt fluide */
+        margin: 0px 22px; /*Pour centrer les éléments: 
+        je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+        
+    }
+
+
+    
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
+@media all and (min-width: 401px) and (max-width:760px) {
+
+    .wrapper{
+
+        min-width: 401px;
+        max-width: 760px; /*Un point d'arrêt fluide */
+        margin: 0px 22px; /*Pour centrer les éléments: 
+        je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+                    
+
+    }
+
+    /*------------secondNav--------------*/
+
+    #secondNav section.wrapper div.row a{
+
+        margin-right: 1rem;
+    }
+
+
+    /*------------mainContent------------*/
+
+    #Restaurants{
+
+        div.wrapper-grid div.card div.card__body span.nouveau{
+
+            left: 280px;
+        }
+
+        div.wrapper-grid a div.card{
+
+            margin-right: 1rem;
+        }
+    
+    }
+
+   
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
+    
+    @media all and (min-width: 761px) and (max-width: 1024px){
+
+        .wrapper{
+
+            min-width: 761px;
+            max-width: 1024px; /*Un point d'arrêt fluide */
+            margin: 0px 22px; /*Pour centrer les éléments: 
+            je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+                          
+
+        }
+
+         /*-----------header-------------*/
+
+        #header{
+
+        display: flex;
+        justify-content: center;
+
+        }
+
+        /*-----------mainNav-------------*/
+
+        #mainNav{
+
+           display: flex;
+           justify-content: center;
+
+           section.wrapper div.row.narrow button{
+
+            margin: 0 10rem;
+
+            }
+
+        }
+
+       
+        /*-----------secondNav-------------*/
+
+
+        
+        #secondNav{
+
+        display: flex;
+        justify-content: center;  
+
+        section.wrapper div.row a{
+
+            margin: 0.5rem 13rem;
+
+            }
+
+        section.wrapper div.row header{
+        
+                display: flex;
+                justify-content: center; 
+        
+            }
+            
+
+        }
+
+        
+
+        /*-----------mainContent-------------*/
+
+        #mainContent{
+
+        display: flex;
+        justify-content: center;
+
+        }
+
+        #Restaurants{
+
+        header{
+
+                display: flex;
+                justify-content: center;
+        
+            }    
+
+        div.wrapper-grid a div.card{
+
+                margin: 1rem 10rem;
+            } 
+            
+        div.wrapper-grid div.card div.card__body span.nouveau{
+
+                left: 330px;
+            }    
+        }
+      
+
+        /*-----------footer-------------*/
+
+       .footer{
+
+        display: flex;
+        justify-content: center;   
+
+        
+        .wrapper div.container{
+
+            display: flex;
+            justify-content: center;  
+            
+            }
+
+        ul li h2{
+
+                font-size: 250%;
+            }   
+        
+       }
+
+        
+    
+    }
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
+       
+     
+    @media all and (min-width: 1025px) and (max-width: 1600px){
+        @import "../layouts/footer";
+
+        .wrapper{
+
+            min-width: 1025px;
+            max-width: 1600px; /*Un point d'arrêt fluide */
+            margin: 0px 22px; /*Pour centrer les éléments: 
+            je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+                          
+
+        }
+
+         /*-----------header-------------*/
+
+
+        #header{
+
+        display: flex;
+        justify-content: center;
+
+        }
+
+
+
+        /*-----------mainNav-------------*/
+
+
+
+        #mainNav{
+
+           display: flex;
+           justify-content: center;
+
+           div.row button{
+
+            margin-right: 20rem;
+            margin-left: 20rem;
+        
+        }
+
+        }
+
+        
+       
+        /*-----------secondNav-------------*/
+
+       #secondNav{
+
+        display: flex;
+        justify-content: center;    
+
+        
+        div.row header h1 {
+      
+            display: flex;
+            justify-content: center;
+          }
+
+       }
+
+      
+
+
+        /*-----------mainContent-------------*/
+
+       #mainContent{
+
+        display: flex;
+        justify-content: center;
+
+
+       }
+
+       
+       #Restaurants{
+
+        header h1{
+
+            display: flex;
+            justify-content: center;
+    
+           }
+           
+        div.wrapper-grid a div.card div.card__body.laPaletteDuGout span.nouveau,
+        div.wrapper-grid  a div.card div.card__body.laNoteEnchantee span.nouveau {
+
+            left: 57.5rem;
+            top: 15px;
+
+        }  
+
+       }
+      
+
+
+        footer.wrapper div.container{
+
+        display: flex;
+        justify-content: center;  
+        
+        }
+
+    }

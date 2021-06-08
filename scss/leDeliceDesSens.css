@@ -1,28 +1,15 @@
 @charset "UTF-8";
-/*
-MA PALETTE DE COULEURS :
-Couleur primaire   #9356DC
-Couleur secondaire #FF79DA
-Couleur Tertaire   #99E2D0
-*/
-/*Mes variables pour les couleurs*/
-/*MAPS*/
-/*
-Mes Polices
-Logo et titres: Shrikhand
-Texte: Roboto
-*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #FFFFFF;
   font-family: "Roboto", sans-serif;
   color: #606060;
   font-weight: 700;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 ul {
@@ -41,6 +28,38 @@ img {
   width: 100%;
 }
 
+/*
+MA PALETTE DE COULEURS :
+Couleur primaire   #9356DC
+Couleur secondaire #FF79DA
+Couleur Tertaire   #99E2D0
+*/
+/*Mes variables pour les couleurs*/
+#Menu div.wrapper-grid button {
+  border-radius: 30px;
+  padding: 0.7rem 2.9rem 0.7rem 2.9rem;
+  color: #FFFFFF;
+  background-color: #FF79DA;
+  font-size: medium;
+  margin: 3rem 3rem 5.5rem 3.5rem;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  box-shadow: 2px 2px 7px 0px #888888;
+  border: 2px;
+}
+
+/*
+MA PALETTE DE COULEURS :
+Couleur primaire   #9356DC
+Couleur secondaire #FF79DA
+Couleur Tertaire   #99E2D0
+*/
+/*Mes variables pour les couleurs*/
+/*MAPS*/
+/*
+Mes Polices
+Logo et titres: Shrikhand
+Texte: Roboto
+*/
 .wrapper {
   min-width: 320px;
   max-width: 400px;
@@ -142,17 +161,6 @@ header nav ul li.logo {
 #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description {
   display: flex;
   justify-content: space-between;
-}
-#Menu div.wrapper-grid button {
-  border-radius: 30px;
-  padding: 0.7rem 2.9rem 0.7rem 2.9rem;
-  color: #FFFFFF;
-  background-color: #FF79DA;
-  font-size: medium;
-  margin: 3rem 3rem 5.5rem 3.5rem;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  box-shadow: 2px 2px 7px 0px #888888;
-  border: 2px;
 }
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 h3.card__title,
 #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 h3.card__title,
@@ -483,6 +491,28 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media all and (min-width: 1025px) and (max-width: 1600px) {
+  /*-----------footer-------------*/
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer.wrapper div.container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #mentionsLegales ul li h2 {
+    font-size: 400%;
+  }
+  #mentionsLegales ul li.button {
+    font-size: 200%;
+  }
+  #mentionsLegales ul li.button a i.fas.fa-hands-helping::before,
+#mentionsLegales ul li.button a i.fas.fa-utensils::before {
+    font-size: 200%;
+  }
+
   .wrapper {
     min-width: 1025px;
     max-width: 1600px;
@@ -526,28 +556,5 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
   }
 
   /*END OF #Menu*/
-  /*-----------footer-------------*/
-  .footer {
-    display: flex;
-    justify-content: center;
-  }
-
-  footer.wrapper div.container {
-    display: flex;
-    justify-content: center;
-  }
-
-  #mentionsLegales ul li h2 {
-    font-size: 400%;
-  }
-  #mentionsLegales ul li.button {
-    font-size: 200%;
-  }
-  #mentionsLegales ul li.button a i.fas.fa-hands-helping::before,
-#mentionsLegales ul li.button a i.fas.fa-utensils::before {
-    font-size: 200%;
-  }
-
-  /*END OF #mentionsLegales */
 }
 /*END OF MEDIA QUERY *//*# sourceMappingURL=leDeliceDesSens.css.map */

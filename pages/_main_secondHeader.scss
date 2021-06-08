@@ -1,0 +1,87 @@
+
+    #secondHeader{
+    
+        border-bottom: 1px solid $border-color;
+        background-color: $second-background-color;
+        display: flex;
+        justify-content: center;
+        padding: 0.9rem;
+        color: $darker-text-color;
+        box-shadow: inset 0px 10px 10px #c4c4c4;
+
+        div.wrapper div.container.flex nav form.search-form i.fas.fa-map-marker-alt{
+
+        padding-right: 1rem;
+    
+          
+        }
+
+      
+    
+    }
+
+    
+    .container.flex{
+
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    ::placeholder {
+    
+        color: $placeholder-color;
+        background-color: $second-background-color;
+        font-weight: 700;
+        font-size:larger;
+        opacity: 1; /* Firefox */
+        font-family: 'Roboto', sans-serif;
+        /*margin-right: 0px;*/
+        outline: none;
+        
+      }
+
+      
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+
+       color: $placeholder-color;
+       background-color: $second-background-color;
+       font-weight: 800;
+       font-size:larger;
+       font-family: 'Roboto', sans-serif;
+       /*margin-right: 0px;*/
+
+      }
+
+      
+    ::-ms-input-placeholder { /* Microsoft Edge */
+
+       color: $placeholder-color;
+       background-color: $second-background-color;
+       font-weight: 800;
+       font-size:larger;
+       font-family: 'Roboto', sans-serif;
+       /*margin-right: 0px;*/
+
+      }
+
+
+      input {
+
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        background-color: #eee;
+
+      }
+      
+
+      .no-outline:focus {
+
+        outline: none;
+
+      }
+
+
+     

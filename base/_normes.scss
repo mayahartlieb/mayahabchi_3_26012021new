@@ -9,10 +9,10 @@
      
     body {
     
-        background-color: $main-background-color;
+        background-color: #FFFFFF;
         font-family: 'Roboto', sans-serif;
-        color: $text-color;	
-        font-weight: map-get($font-weights, bold);
+        color: #606060;	
+        font-weight: 700;
     
     }
 
@@ -29,7 +29,7 @@
 
         /*I want to remove my underlines*/
         text-decoration: none;
-        color: $text-color;
+        color: #606060;
     }
     
     

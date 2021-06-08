@@ -1,29 +1,15 @@
 @charset "UTF-8";
-/*
-MA PALETTE DE COULEURS :
-Couleur primaire   #9356DC
-Couleur secondaire #FF79DA
-Couleur Tertaire   #99E2D0
-*/
-/*Mes variables pour les couleurs*/
-/*MAPS*/
-/*
-Mes Polices
-Logo et titres: Shrikhand
-Texte: Roboto
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-*/
 body {
   background-color: #FFFFFF;
   font-family: "Roboto", sans-serif;
   color: #606060;
   font-weight: 700;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 ul {
@@ -42,16 +28,15 @@ img {
   width: 100%;
 }
 
-.wrapper {
-  min-width: 320px;
-  max-width: 400px;
-  /*Un point d'arrêt fluide */
-  margin: 0px 22px;
-  /*Pour centrer les éléments: 
-  je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
-}
-
-/*-----------LOADER----------*/
+/*---box sizing -----------*/
+/*
+MA PALETTE DE COULEURS :
+Couleur primaire   #9356DC
+Couleur secondaire #FF79DA
+Couleur Tertaire   #99E2D0
+*/
+/*Mes variables pour les couleurs*/
+/*MAPS*/
 .loader_background {
   z-index: 3;
   position: absolute;
@@ -142,7 +127,7 @@ img {
     display: none;
   }
 }
-/*----------HEADER-----------*/
+/*-----------LOADER----------*/
 #header {
   border-bottom: 1px solid #f2f2f2;
   background-color: #FFFFFF;
@@ -157,7 +142,7 @@ header nav ul li.logo {
   font-family: "Shrikhand", sans-serif;
 }
 
-/*----------2ndHEADER-----------*/
+/*----------HEADER-----------*/
 #secondHeader {
   border-bottom: 1px solid #f2f2f2;
   background-color: #E8E8E8;
@@ -220,7 +205,7 @@ input {
   outline: none;
 }
 
-/*----------mainNav-----------*/
+/*----------secondHEADER-----------*/
 #mainNav {
   background-color: #f2f2f2;
 }
@@ -254,7 +239,7 @@ input {
   box-shadow: 2px 2px 7px 0px #888888;
 }
 
-/*-----------secondNav--------------*/
+/*----------mainNav-----------*/
 #secondNav div.row {
   padding: 3rem 0 3rem 0;
   display: flex;
@@ -322,7 +307,7 @@ input {
   margin-left: -2.5rem;
 }
 
-/*----------mainContent-----------*/
+/*-----------secondNav--------------*/
 #mainContent {
   background-color: #f2f2f2;
   padding-top: 3.9rem;
@@ -447,7 +432,7 @@ input {
   background-position: center;
 }
 
-/*----------footer-----------*/
+/*----------mainContent-----------*/
 .footer {
   background-color: #353535;
   display: flex;
@@ -483,6 +468,22 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-ute
 footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {
   padding-right: 1rem;
   font-size: small;
+}
+
+/*----------footer-----------*/
+/*
+Mes Polices
+Logo et titres: Shrikhand
+Texte: Roboto
+
+*/
+.wrapper {
+  min-width: 320px;
+  max-width: 400px;
+  /*Un point d'arrêt fluide */
+  margin: 0px 22px;
+  /*Pour centrer les éléments: 
+  je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -583,6 +584,28 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media all and (min-width: 1025px) and (max-width: 1600px) {
+  /*-----------footer-------------*/
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer.wrapper div.container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #mentionsLegales ul li h2 {
+    font-size: 400%;
+  }
+  #mentionsLegales ul li.button {
+    font-size: 200%;
+  }
+  #mentionsLegales ul li.button a i.fas.fa-hands-helping::before,
+#mentionsLegales ul li.button a i.fas.fa-utensils::before {
+    font-size: 200%;
+  }
+
   .wrapper {
     min-width: 1025px;
     max-width: 1600px;
@@ -634,25 +657,8 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
     top: 15px;
   }
 
-  /*-----------footer-------------*/
-  .footer {
-    display: flex;
-    justify-content: center;
-  }
-
   footer.wrapper div.container {
     display: flex;
     justify-content: center;
   }
-
-  #mentionsLegales ul li h2 {
-    font-size: 400%;
-  }
-  #mentionsLegales ul li.button {
-    font-size: 200%;
-  }
-  #mentionsLegales ul li.button a i.fas.fa-hands-helping::before,
-#mentionsLegales ul li.button a i.fas.fa-utensils::before {
-    font-size: 200%;
-  }
-}/*# sourceMappingURL=ohmyfood.css.map */
+}/*# sourceMappingURL=main.css.map */

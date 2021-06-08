@@ -1,31 +1,7 @@
-/*
-MA PALETTE DE COULEURS :
-Couleur primaire   #9356DC
-Couleur secondaire #FF79DA
-Couleur Tertaire   #99E2D0
-*/
+@import "../base/normes";
+@import "../utils/variables";
+@import "../componants/boutons";
 
-/*Mes variables pour les couleurs*/
-
-
-$main-background-color: #FFFFFF;
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
-$border-color:#f2f2f2;
-$text-color:#606060;
-$second-background-color: #E8E8E8;
-$third-background-color: #f2f2f2;
-$darker-text-color: black;
-$footer-background-color: #353535;
-$placeholder-color: #505050;
-$footer-text-color: #FFFFFF;
-$mainNav-button-color: #FFFFFF;
-$secondNav-icon-color: #808080;
-$mainContent-background-color: #f2f2f2;
-$green-button-color: #088F8F;
-$heart-icon-border-color: #817c7a;
-$card-background-color: #FFFFFF;
 
 
 
@@ -38,50 +14,11 @@ $font-weights:(
     "bold": 700
     );
 
-
-
 /*
 Mes Polices
 Logo et titres: Shrikhand
 Texte: Roboto
 */
-
-body {
-
-    background-color: $main-background-color;
-    font-family: 'Roboto', sans-serif;
-    color: $text-color;	
-    font-weight: map-get($font-weights, bold);
-
-}
-
-      
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-}
-
-ul {
-    /*I want to remove all the bullet points */
-    list-style-type: none; 
-
-}
-
-a, span {
-    /*I want to remove my underlines*/
-    text-decoration: none;
-    color: $text-color;
-}
-
-
-
-img {
-
-    /*I want my images to fit in the container*/
-    width: 100%;
-}
 
   
 .wrapper{
@@ -223,20 +160,6 @@ img {
              justify-content: space-between;
 
         }
-
-        div.wrapper-grid button{
-
-            border-radius: 30px;
-            padding: 0.7rem 2.9rem 0.7rem 2.9rem;
-            color: #FFFFFF;
-            background-color: #FF79DA;
-            font-size: medium;
-            margin: 3rem 3rem 5.5rem 3.5rem;
-            background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-            box-shadow: 2px 2px 7px 0px #888888;
-            border: 2px;
-            
-       }
 
        div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 h3.card__title,
        div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 h3.card__title,
@@ -717,6 +640,8 @@ img {
      
 @media all and (min-width: 1025px) and (max-width: 1600px){
 
+    @import "../layouts/footer";
+
     .wrapper{
 
         min-width: 1025px;
@@ -785,43 +710,10 @@ img {
     }/*END OF #Menu*/
  
 
-    /*----------------footer---------------*/
-
-
-    .footer{
-
-        display: flex;
-        justify-content: center;    
-    }
-
-    footer.wrapper div.container{
-
-        display: flex;
-        justify-content: center;  
-    }
-
-    #mentionsLegales{
-
-    
-        ul li h2{
-
-            font-size: 400%;
-            
-        }
-
-        ul li.button{
-
-            font-size: 200%;
-        }
 
    
-        ul li.button a i.fas.fa-hands-helping::before,
-        ul li.button a i.fas.fa-utensils::before{
 
-            font-size: 200%;
-        }
-
-    }/*END OF #mentionsLegales*/
+    
 
 
 } /*END OF MEDIA QUERY*/

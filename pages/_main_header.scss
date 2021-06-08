@@ -1,0 +1,16 @@
+#header{
+    
+    border-bottom: 1px solid $border-color;
+    background-color: $main-background-color;
+    /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [color];*/
+    box-shadow: 0px 0px 5px 0 $box-shadow-color;    
+    /*margin-bottom: 2px;  */
+    
+ }
+ 
+ header nav ul li.logo {
+    
+    padding: 1.5rem 4.2rem 0.2rem 4.2rem; /*J'ai réduit la taille de mon logo avec des paddings de 4.2rem à droite et à gauche*/
+    font-family: 'Shrikhand', sans-serif;
+
+}

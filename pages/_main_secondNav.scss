@@ -1,0 +1,100 @@
+@import "../utils/font_weights"; 
+
+#secondNav{
+
+    div.row{
+
+        padding: 3rem 0 3rem 0;
+        display: flex;
+        flex-flow: column;
+        
+    }
+
+    div.row header h1{
+
+        color: $darker-text-color;
+        padding-bottom: 1.5rem;
+    }
+
+    section.wrapper div.row a{
+
+        background-color: $third-background-color;
+        border-radius: 22px;
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        color: $darker-text-color;
+        font-size: medium;
+        font-weight: map-get($font-weights, large);
+        position: relative;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+        border: 2px;
+        cursor: pointer;
+
+       
+
+        &:active{
+         
+        background-color: #f5edff;    
+
+            }
+
+        &:active i.fas.fa-store::before,
+        &:active i.fas.fa-list::before,
+        &:active i.fas.fa-mobile-alt::before{
+
+        color: $primary-color;    
+
+        } 
+        
+    }
+
+    section.wrapper div.row a i.fas.fa-store,
+    section.wrapper div.row a i.fas.fa-list,
+    section.wrapper div.row a i.fas.fa-mobile-alt{
+
+        color: $secondNav-icon-color;
+        margin-right: 1.5rem;
+        font-size: 120%;
+
+         /*if active :  color or background: linear-gradient(#ff79da, #c466db); */
+    }
+
+    section.wrapper div.row a:active .fa-mobile-alt, 
+    section.wrapper div.row a:active .fa-list, 
+    section.wrapper div.row a:active .fa-store{
+
+    color: $primary-color ;
+    }
+
+    section.wrapper div.row a:hover{
+        background-color: #e4d5f6;
+    }
+
+    section.wrapper div.row a:hover .fas.fa-mobile-alt::before,
+    section.wrapper div.row a:hover .fas.fa-list::before,
+    section.wrapper div.row a:hover .fas.fa-store::before
+    {
+    color:#9356DC;
+    }
+ 
+}  
+ 
+
+.circle {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 1px;
+    background: $primary-color;
+    border: 3px solid $primary-color;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    margin-right: 1rem;
+    margin-left: -2.5rem;
+
+
+  }
