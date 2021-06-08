@@ -1,0 +1,17 @@
+
+#header{
+    
+    border-bottom: 1px solid $border-color;
+    background-color: $main-background-color;
+    /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [color];*/
+    justify-content: center;
+   
+}
+
+header nav ul li.logo {
+
+    padding: 1.5rem 4.2rem 0.2rem 4.2rem;
+    font-family: 'Shrikhand', sans-serif;
+
+} 
+
