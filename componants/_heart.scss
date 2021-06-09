@@ -1,0 +1,56 @@
+.heart1{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    right: 20px;
+    top: 190px;
+    border-bottom: 1px solid #817c7a;
+    border-right: 1px solid #817c7a;
+    transform: rotate(45deg);
+}
+.heart1:before{
+    content: ""; /*insert generated content*/
+    position: absolute;
+    top: -8px;
+    width: 13px;
+    height: 8px;
+    background: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: 1px solid #817c7a;
+    border-right: 1px solid #817c7a;
+}
+.heart1:after{
+    content: ""; /*insert generated content*/
+    position: absolute;
+    left: -8px;
+    width: 8px;
+    height: 13px;
+    background: #ffffff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: 1px solid #817c7a;
+    border-bottom: 1px solid #817c7a;
+}
+.heart1:hover{
+    background: linear-gradient(#ff79da, #c466db);
+    border: none;
+    width: 13px;
+    height:13px;
+
+    &::before:hover{
+        background: linear-gradient(#ff79da, #c466db);
+        border: none; 
+    }
+}
+.heart1:before:hover{
+    background: linear-gradient(#ff79da, #c466db);
+    border: none;
+}
+#Restaurants div.wrapper-grid a div.card div.card__body.laPaletteDuGout div.heart1::before:hover{
+    background: linear-gradient(#ff79da, #c466db);
+    border: none;
+    width: 13px;
+    height: 8px;
+}

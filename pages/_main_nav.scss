@@ -24,6 +24,7 @@
         font-weight: map-get($font-weights, regular);
         color: $placeholder-color;
         padding-bottom: 2rem;
+    
     }
 
     div.row button{
@@ -38,6 +39,7 @@
         border: 2px;
         background: linear-gradient($secondary-color, $primary-color);
         box-shadow: 2px 2px 7px 0px $box-shadow-color;
+        cursor: pointer;
     }
     
 }
