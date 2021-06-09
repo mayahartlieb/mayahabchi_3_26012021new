@@ -5,6 +5,8 @@
 }
 .menuDescription{
     width: 70%;
+    padding:0.9rem;
+    border-radius: 19px;
 }
 .menuPrix{
     width: 10%;
@@ -12,7 +14,7 @@
     text-align: right;
     transition: transform 400ms;
 }
-.menuCoche{
+.animation, .animation1, .animation2, .animation3, .animation4, .animation5, .animation6, .animation7, .animation8, .animation9, .animation10{
     width: 20%;
     background-color: #99e2d0;
     transform: scaleX(0);
@@ -22,6 +24,8 @@
 .card__body:hover .menuPrix{
     transform: translateX(0);
 }
-.card__body:hover .menuCoche{
+.card__body:hover .animation, .card__body:hover .animation1, .card__body:hover .animation2, .card__body:hover .animation3,
+ .card__body:hover .animation4, .card__body:hover .animation5, .card__body:hover .animation6, .card__body:hover .animation7,
+  .card__body:hover .animation8, .card__body:hover .animation9, .card__body:hover .animation10{
     transform: scaleX(100%);
 }

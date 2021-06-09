@@ -162,6 +162,10 @@ header nav ul li.logo {
   /*animation-timing-function: ease-in-out: démarre lentement, accélère puis ralenti à la fin*/
 }
 
+.menuDescription {
+  padding: 0.9rem;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
