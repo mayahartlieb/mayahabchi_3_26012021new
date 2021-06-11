@@ -1,11 +1,10 @@
-@import "../base/normes";
-@import "../utils/variables";
-@import "../componants/boutons";
-@import "../utils/font_weights";   /*MAPS*/
-@import "../layouts/header"; /*----------HEADER-----------*/
-@import "../layouts/mainContent"; /*----------mainContent-----------*/
-@import "../layouts/mobileFooter"; /*----------footer-----------*/  
-@import "../componants/heart"; 
+@import "base/normes";
+@import "utils/variables";
+@import "componants/boutons";
+@import "utils/font_weights";   /*MAPS*/
+@import "layouts/header"; /*----------HEADER-----------*/
+@import "layouts/mainContent"; /*----------mainContent-----------*/
+@import "layouts/mobileFooter"; /*----------footer-----------*/  
 
 
 
@@ -32,7 +31,7 @@ Texte: Roboto
 
     #secondHeader div.container img{
 
-        background-image: url(../images/restaurants/ALaFrancaise.jpg);
+        background-image: url(images/restaurants/ALaFrancaise.jpg);
         width: 100%;
         background-repeat: no-repeat;
         object-fit: cover;
@@ -419,7 +418,7 @@ Texte: Roboto
      
 @media all and (min-width: 1025px) and (max-width: 1600px){
 
-    @import "../layouts/footer";
+    @import "layouts/footer";
 
     .wrapper{
 

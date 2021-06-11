@@ -1,0 +1,82 @@
+.card__body{
+
+    display: flex;
+    width: 100%;
+    padding:0!important;
+}
+
+.menuDescription{
+
+    width: 70%;
+    padding:0.9rem;
+    border-radius: 19px;
+}
+
+.menuPrix{
+
+    width: 10%;
+    transform: translateX(200%);
+    text-align: right;
+    transition: transform 400ms;
+    padding: 0.9rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.animation, .animation1,
+ .animation2, .animation3,
+  .animation4, .animation5,
+   .animation6, .animation7,
+    .animation8, .animation9, .animation10{
+        
+    width: 20%;
+    background-color: #99e2d0;
+    transform: scaleX(0);
+    transform-origin: center right;
+    transition: transform 400ms;
+    
+}
+
+.card__body:hover .menuPrix{
+
+    transform: translateX(0);
+}
+
+.card__body:hover .animation, .card__body:hover .animation1, .card__body:hover .animation2, .card__body:hover .animation3,
+ .card__body:hover .animation4, .card__body:hover .animation5, .card__body:hover .animation6, .card__body:hover .animation7,
+  .card__body:hover .animation8, .card__body:hover .animation9, .card__body:hover .animation10{
+
+    transform: scaleX(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+}
+
+.card__body .icon{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 100px;
+    background-color: #fff;
+    height: 1.6rem;
+    width: 1.6rem;
+
+    i {
+        transition: transform 400ms;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.card__body:hover .icon{
+
+    i {
+        transform: rotate(10turn);
+    }
+
+}

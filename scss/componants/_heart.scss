@@ -38,17 +38,14 @@
     border: none;
     width: 13px;
     height:13px;
-
-    &::before:hover{
-        background: linear-gradient(#ff79da, #c466db);
-        border: none; 
-    }
 }
-.heart1:before:hover{
+.heart1:hover :after{
     background: linear-gradient(#ff79da, #c466db);
     border: none;
+    width: 8px;
+    height: 13px;
 }
-#Restaurants div.wrapper-grid a div.card div.card__body.laPaletteDuGout div.heart1::before:hover{
+.heart1:hover :before{
     background: linear-gradient(#ff79da, #c466db);
     border: none;
     width: 13px;

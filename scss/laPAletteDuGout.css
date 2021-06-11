@@ -130,16 +130,16 @@ header nav ul li.logo {
   display: flex;
   justify-content: space-between;
 }
-#Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 h3.card__title,
-#Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 h3.card__title,
-#Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 h3.card__title {
+#Menu div.wrapper-grid section.entrees div.card div.card__body div.menuDescription h3,
+#Menu div.wrapper-grid section.plats div.card div.card__body div.menuDescription h3,
+#Menu div.wrapper-grid section.desserts div.card div.card__body div.menuDescription h3 {
   color: black;
   font-weight: 700;
   font-size: medium;
 }
-#Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description p,
-#Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description p,
-#Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description p {
+#Menu div.wrapper-grid section.entrees div.card div.card__body div.menuDescription p,
+#Menu div.wrapper-grid section.plats div.card div.card__body div.menuDescription p,
+#Menu div.wrapper-grid section.desserts div.card div.card__body div.menuDescription p {
   font-weight: 400;
   font-size: 14px;
   padding-top: 0.3rem;
@@ -230,7 +230,7 @@ Texte: Roboto
 
 /*----------secondheader-----------*/
 #secondHeader div.container img {
-  background-image: url(../images/restaurants/ALaFrancaise.jpg);
+  background-image: url(images/restaurants/ALaFrancaise.jpg);
   width: 100%;
   background-repeat: no-repeat;
   object-fit: cover;

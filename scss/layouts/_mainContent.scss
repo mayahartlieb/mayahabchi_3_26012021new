@@ -84,10 +84,10 @@
             justify-content: space-between;
 
     }
-
-    div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 h3.card__title,
-    div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 h3.card__title,
-    div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 h3.card__title{
+    
+    div.wrapper-grid section.entrees div.card div.card__body div.menuDescription h3,
+    div.wrapper-grid section.plats div.card div.card__body div.menuDescription h3,
+    div.wrapper-grid section.desserts div.card div.card__body div.menuDescription h3{
 
             color: $darker-text-color;
             font-weight: map-get($font-weights, bold);
@@ -95,9 +95,9 @@
     
     }
 
-    div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description p,
-    div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description p,
-    div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description p{
+    div.wrapper-grid section.entrees div.card div.card__body div.menuDescription p,   
+    div.wrapper-grid section.plats div.card div.card__body div.menuDescription p, 
+    div.wrapper-grid section.desserts div.card div.card__body div.menuDescription p{
 
          font-weight: map-get($font-weights, regular);
          font-size: 14px;

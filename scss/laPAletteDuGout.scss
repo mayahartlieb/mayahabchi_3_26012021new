@@ -1,10 +1,10 @@
-@import "../base/normes";
-@import "../utils/variables";
-@import "../componants/boutons";
-@import "../utils/font_weights";   /*MAPS*/
-@import "../layouts/header"; /*----------HEADER-----------*/
-@import "../layouts/mainContent"; /*----------mainContent-----------*/
-@import "../layouts/mobileFooter"; /*----------footer-----------*/  
+@import "base/normes";
+@import "utils/variables";
+@import "componants/boutons";
+@import "utils/font_weights";   /*MAPS*/
+@import "layouts/header"; /*----------HEADER-----------*/
+@import "layouts/mainContent"; /*----------mainContent-----------*/
+@import "layouts/mobileFooter"; /*----------footer-----------*/  
 
 /*
 Mes Polices
@@ -28,7 +28,7 @@ Texte: Roboto
 
     #secondHeader div.container img {
 
-        background-image: url(../images/restaurants/ALaFrancaise.jpg);
+        background-image: url(images/restaurants/ALaFrancaise.jpg);
         width: 100%;
         background-repeat: no-repeat;
         object-fit: cover;
