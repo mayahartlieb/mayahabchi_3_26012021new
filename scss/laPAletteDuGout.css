@@ -61,12 +61,71 @@ header nav ul li.logo {
 }
 
 /*----------HEADER-----------*/
+.footer {
+  background-color: #353535;
+  display: flex;
+  justify-content: flex-start;
+  color: #FFFFFF;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+.footer ul li h2 {
+  font-family: "Shrikhand", sans-serif;
+}
+.footer ul li a {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+}
+.footer ul li:first-child {
+  padding-bottom: 0.6rem;
+  font-size: small;
+  font-weight: 300;
+}
+.footer ul li.button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.1rem;
+  font-size: medium;
+  font-weight: 400;
+}
+
+footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils,
+footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {
+  padding-right: 1rem;
+  font-size: small;
+}
+
+/*----------footer-----------*/
+/*
+Mes Polices
+Logo et titres: Shrikhand
+Texte: Roboto
+*/
+.wrapper {
+  min-width: 320px;
+  max-width: 400px;
+  /*Un point d'arrêt fluide */
+  margin: 0px 22px;
+  /*Pour centrer les éléments: 
+  je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+}
+
+/*----------secondheader-----------*/
+#secondHeader div.container img {
+  background-image: url(images/restaurants/ALaFrancaise.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  z-index: -1;
+  position: relative;
+}
+
+/*----------mainContent-----------*/
 #mainContent {
   background-color: #f2f2f2;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   margin-top: -43px;
-  z-index: 10px;
+  z-index: 10;
 }
 
 #Menu header {
@@ -179,66 +238,6 @@ header nav ul li.logo {
     /*cette transformation va amener l'élément à sa place */
   }
 }
-/*----------mainContent-----------*/
-.footer {
-  background-color: #353535;
-  display: flex;
-  justify-content: flex-start;
-  color: #FFFFFF;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-}
-.footer ul li h2 {
-  font-family: "Shrikhand", sans-serif;
-}
-.footer ul li a {
-  color: #FFFFFF;
-  font-family: "Roboto", sans-serif;
-}
-.footer ul li:first-child {
-  padding-bottom: 0.6rem;
-  font-size: small;
-  font-weight: 300;
-}
-.footer ul li.button {
-  padding-top: 0.5rem;
-  padding-bottom: 0.1rem;
-  font-size: medium;
-  font-weight: 400;
-}
-
-footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils,
-footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {
-  padding-right: 1rem;
-  font-size: small;
-}
-
-/*----------footer-----------*/
-/*
-Mes Polices
-Logo et titres: Shrikhand
-Texte: Roboto
-*/
-.wrapper {
-  min-width: 320px;
-  max-width: 400px;
-  /*Un point d'arrêt fluide */
-  margin: 0px 22px;
-  /*Pour centrer les éléments: 
-  je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
-}
-
-/*----------secondheader-----------*/
-#secondHeader div.container img {
-  background-image: url(images/restaurants/ALaFrancaise.jpg);
-  width: 100%;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  z-index: -1;
-  position: relative;
-}
-
-/*----------mainContent-----------*/
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation {
   display: flex;
   background-color: #99e2d0;
@@ -489,6 +488,27 @@ Texte: Roboto
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media all and (min-width: 1025px) and (max-width: 1600px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer.wrapper div.container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #mentionsLegales ul li h2 {
+    font-size: 400%;
+  }
+  #mentionsLegales ul li.button {
+    font-size: 200%;
+  }
+  #mentionsLegales ul li.button a i.fas.fa-hands-helping::before,
+#mentionsLegales ul li.button a i.fas.fa-utensils::before {
+    font-size: 200%;
+  }
+
   .wrapper {
     min-width: 1025px;
     max-width: 1600px;
@@ -533,27 +553,5 @@ Texte: Roboto
 
   /*END OF #Menu*/
   /*-----------footer-------------*/
-  .footer {
-    display: flex;
-    justify-content: center;
-  }
-
-  footer.wrapper div.container {
-    display: flex;
-    justify-content: center;
-  }
-
-  #mentionsLegales ul li h2 {
-    font-size: 400%;
-  }
-  #mentionsLegales ul li.button {
-    font-size: 200%;
-  }
-  #mentionsLegales ul li.button a i.fas.fa-hands-helping::before,
-#mentionsLegales ul li.button a i.fas.fa-utensils::before {
-    font-size: 200%;
-  }
-
-  /*END OF #mentionsLegales */
 }
 /*END OF #MEDIA QUERY*//*# sourceMappingURL=laPAletteDuGout.css.map */

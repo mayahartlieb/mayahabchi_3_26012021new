@@ -61,12 +61,71 @@ header nav ul li.logo {
 }
 
 /*----------HEADER-----------*/
+.footer {
+  background-color: #353535;
+  display: flex;
+  justify-content: flex-start;
+  color: #FFFFFF;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+.footer ul li h2 {
+  font-family: "Shrikhand", sans-serif;
+}
+.footer ul li a {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+}
+.footer ul li:first-child {
+  padding-bottom: 0.6rem;
+  font-size: small;
+  font-weight: 300;
+}
+.footer ul li.button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.1rem;
+  font-size: medium;
+  font-weight: 400;
+}
+
+footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils,
+footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {
+  padding-right: 1rem;
+  font-size: small;
+}
+
+/*----------footer-----------*/
+/*
+Mes Polices
+Logo et titres: Shrikhand
+Texte: Roboto
+*/
+.wrapper {
+  min-width: 320px;
+  max-width: 400px;
+  /*Un point d'arrêt fluide */
+  margin: 0px 22px;
+  /*Pour centrer les éléments: 
+  je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+}
+
+/*----------secondheader-----------*/
+#secondHeader div.container img {
+  background-image: url(images/restaurants/ALaFrancaise.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  z-index: -1;
+  position: relative;
+}
+
+/*----------mainContent-----------*/
 #mainContent {
   background-color: #f2f2f2;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   margin-top: -43px;
-  z-index: 10px;
+  z-index: 10;
 }
 
 #Menu header {
@@ -130,16 +189,16 @@ header nav ul li.logo {
   display: flex;
   justify-content: space-between;
 }
-#Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 h3.card__title,
-#Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 h3.card__title,
-#Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 h3.card__title {
+#Menu div.wrapper-grid section.entrees div.card div.card__body div.menuDescription h3,
+#Menu div.wrapper-grid section.plats div.card div.card__body div.menuDescription h3,
+#Menu div.wrapper-grid section.desserts div.card div.card__body div.menuDescription h3 {
   color: black;
   font-weight: 700;
   font-size: medium;
 }
-#Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description p,
-#Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description p,
-#Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description p {
+#Menu div.wrapper-grid section.entrees div.card div.card__body div.menuDescription p,
+#Menu div.wrapper-grid section.plats div.card div.card__body div.menuDescription p,
+#Menu div.wrapper-grid section.desserts div.card div.card__body div.menuDescription p {
   font-weight: 400;
   font-size: 14px;
   padding-top: 0.3rem;
@@ -162,6 +221,10 @@ header nav ul li.logo {
   /*animation-timing-function: ease-in-out: démarre lentement, accélère puis ralenti à la fin*/
 }
 
+.menuDescription {
+  padding: 0.9rem;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -175,32 +238,6 @@ header nav ul li.logo {
     /*cette transformation va amener l'élément à sa place */
   }
 }
-/*----------mainContent-----------*/
-/*
-Mes Polices
-Logo et titres: Shrikhand
-Texte: Roboto
-*/
-.wrapper {
-  min-width: 320px;
-  max-width: 400px;
-  /*Un point d'arrêt fluide */
-  margin: 0px 22px;
-  /*Pour centrer les éléments: 
-  je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
-}
-
-/*----------secondheader-----------*/
-#secondHeader div.container img {
-  background-image: url(../images/restaurants/ALaFrancaise.jpg);
-  width: 100%;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  z-index: -1;
-  position: relative;
-}
-
-/*----------mainContent-----------*/
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description div.animation {
   display: flex;
   background-color: #99e2d0;
@@ -348,63 +385,6 @@ Texte: Roboto
 }
 
 /*END OF #MENU */
-@keyframes turn {
-  0% {
-    transform: translateX(-50%) rotate(0deg);
-    opacity: 1;
-  }
-  50% {
-    transform: translateX(-50%) rotate(180deg);
-    opacity: 1;
-  }
-  77% {
-    transform: translateX(-50%) rotate(360deg);
-    opacity: 0.9;
-  }
-  81% {
-    transform: translateX(-50%) rotate(0deg);
-    opacity: 0.8;
-  }
-  100% {
-    transform: translateX(-50%) rotate(40deg);
-    opacity: 0;
-  }
-}
-/*----------footer-----------*/
-.footer {
-  background-color: #353535;
-  display: flex;
-  justify-content: flex-start;
-  color: #FFFFFF;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-}
-.footer ul li h2 {
-  font-family: "Shrikhand", sans-serif;
-}
-.footer ul li a {
-  color: #FFFFFF;
-  font-family: "Roboto", sans-serif;
-}
-.footer ul li:first-child {
-  padding-bottom: 0.6rem;
-  font-size: small;
-  font-weight: 300;
-}
-.footer ul li.button {
-  padding-top: 0.5rem;
-  padding-bottom: 0.1rem;
-  font-size: medium;
-  font-weight: 400;
-}
-
-/*END OF .footer */
-footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils,
-footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {
-  padding-right: 1rem;
-  font-size: small;
-}
-
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media all and (min-width: 401px) and (max-width: 760px) {

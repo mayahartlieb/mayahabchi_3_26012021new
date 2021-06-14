@@ -3,7 +3,6 @@
 @import "componants/boutons";
 @import "utils/font_weights";   /*MAPS*/
 @import "layouts/header"; /*----------HEADER-----------*/
-@import "layouts/mainContent"; /*----------mainContent-----------*/
 @import "layouts/mobileFooter"; /*----------footer-----------*/  
 
 
@@ -43,6 +42,153 @@ Texte: Roboto
 
 
     /*----------mainContent-----------*/
+
+    #mainContent{
+
+        background-color: $third-background-color;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        margin-top: -43px;
+        z-index: 10;
+    }
+    
+    #Menu{
+    
+        header{
+    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 1.8rem;
+            font-size: large;
+            font-weight: map-get($font-weights, medium);
+        }
+    
+        > header:nth-child(1) > h1:nth-child(1){
+    
+            color: $darker-text-color;
+            font-family: 'Shrikhand', sans-serif;       
+            font-weight: map-get($font-weights, bold);
+        }
+    
+        header i.far.fa-heart{
+    
+            font-size: x-large;
+            padding-right: 0.9rem;
+            color: $secondNav-icon-color;
+        }
+        
+        div.wrapper-grid section.entrees header{
+    
+            padding-top: 1rem;
+        }
+    
+        div.wrapper-grid section.entrees header,
+        div.wrapper-grid section.plats header,
+        div.wrapper-grid section.desserts header{
+    
+            font-weight: map-get($font-weights, regular);
+            font-size: medium;
+            margin-bottom: 0.9rem;
+                
+        }
+    
+        div.wrapper-grid section.entrees header:after,
+        div.wrapper-grid section.plats header:after,
+        div.wrapper-grid section.desserts header:after{
+    
+            content: ""; /* This is necessary for the pseudo element to work. */ 
+            display: block; /* This will put the pseudo element on its own line. */
+            margin-right: 17.5rem;
+            margin-left: -8rem; /* This will center the border. */
+            margin-top: 0.5rem;
+            width: 13%; /* Change this to whatever width you want. */
+            padding-top: 20px; /* This creates some space between the element and the border. */
+            border-bottom: 3px solid $tertiary-color; /* This creates the border.*/
+    
+        }  
+    
+            
+    
+        div.wrapper-grid section.entrees div.card div.card__body,
+        div.wrapper-grid section.plats div.card div.card__body,
+        div.wrapper-grid section.desserts div.card div.card__body{
+    
+                background-color: $card-background-color;
+                margin-bottom: 0.5rem;
+                border-radius: 19px;
+                padding: 0.9rem;
+                cursor: pointer;    
+        }
+    
+        div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description,
+        div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description,
+        div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description{
+         
+                display: flex;
+                justify-content: space-between;
+    
+        }
+        
+        div.wrapper-grid section.entrees div.card div.card__body div.menuDescription h3,
+        div.wrapper-grid section.plats div.card div.card__body div.menuDescription h3,
+        div.wrapper-grid section.desserts div.card div.card__body div.menuDescription h3{
+    
+                color: $darker-text-color;
+                font-weight: map-get($font-weights, bold);
+                font-size: medium;
+        
+        }
+    
+        div.wrapper-grid section.entrees div.card div.card__body div.menuDescription p,   
+        div.wrapper-grid section.plats div.card div.card__body div.menuDescription p, 
+        div.wrapper-grid section.desserts div.card div.card__body div.menuDescription p{
+    
+             font-weight: map-get($font-weights, regular);
+             font-size: 14px;
+             padding-top: 0.3rem;
+    
+        }
+    
+        div.wrapper-grid section.entrees div.card,
+        div.wrapper-grid section.plats div.card,
+        div.wrapper-grid section.deserts div.card{
+    
+            box-shadow: 2px 4px 8px 3px #e4e4e7;
+            border-radius: 20px;
+    
+        }
+    
+        div.wrapper-grid section.entrees,
+        div.wrapper-grid section.plats,
+        div.wrapper-grid section.desserts{    
+    
+            animation: fadeIn 1000ms 400ms both ease-in-out; 
+         /*animation: [name] [durée] [délai] [fill-mode] [timing-function] ; 
+         l'ordre pour la pluspart de ces fonctions n'a pas d'importance sauf pour le délai et la durée */
+         /*animation-fill-mode: both : ma div va adopter la position du keyframe '0%' avant le début de l'animation  
+         et ensuite mon animation va garder la position ici définie par la keyframe à 100% même quand l'animation est finie, 
+         ma div va adopter les deux comportements en même temps 'backwards et forwards'*/
+         /*animation-timing-function: ease-in-out: démarre lentement, accélère puis ralenti à la fin*/
+        }
+    }
+    
+    .menuDescription {
+        padding: 0.9rem;
+    }
+    
+    @keyframes fadeIn{
+        0% {
+            opacity: 0;
+            transform: translateY(10px);/*on va démarrer à 10px, plus bas donc que la postion normale  */
+            
+        }
+        100% {
+            opacity: 1;/*cet élément va devenir complètement opaque au fur et à mesure de l'évolution de l'animation*/
+            transform: translateY(0);/*cette transformation va amener l'élément à sa place */ 
+            
+        }
+    }
 
     #Menu{
 
@@ -224,29 +370,6 @@ Texte: Roboto
     } /*END OF #MENU */
    
 
-    @keyframes turn{
-        0% {
-            transform: translateX(-50%) rotate(0deg);
-            opacity: 1;
-        }
-        50% {
-            transform: translateX(-50%) rotate(180deg);
-            opacity: 1;
-        }
-        77% {
-            transform: translateX(-50%) rotate(360deg);
-            opacity: 0.9;
-        }
-        81% {
-            transform: translateX(-50%) rotate(0deg);
-            opacity: 0.8;
-        }
-        100% {
-            transform: translateX(-50%) rotate(40deg);
-            opacity: 0;
-        }
-      }
-  
  
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -418,7 +541,7 @@ Texte: Roboto
      
 @media all and (min-width: 1025px) and (max-width: 1600px){
 
-    @import "layouts/footer";
+    @import "layouts/desktopFooter";
 
     .wrapper{
 
