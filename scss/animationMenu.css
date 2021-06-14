@@ -41,6 +41,7 @@
 .card__body:hover .animation4, .card__body:hover .animation5, .card__body:hover .animation6, .card__body:hover .animation7,
 .card__body:hover .animation8, .card__body:hover .animation9, .card__body:hover .animation10 {
   transform: scaleX(1);
+  /*The scaleX() CSS function defines a transformation that resizes an element along the x-axis (horizontally).*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,6 +61,8 @@
 }
 .card__body .icon i {
   transition: transform 400ms;
+  /*Without applying transition, the element would abruptly change sizes.
+  Add the transition to the parent selector (not the hover selector). To make the transition smooth on both hover-over/hover-off.*/
   display: flex;
   align-items: center;
 }
