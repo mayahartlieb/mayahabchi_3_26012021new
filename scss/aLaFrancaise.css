@@ -145,6 +145,10 @@ Texte: Roboto
   font-size: x-large;
   padding-right: 0.9rem;
   color: #808080;
+  cursor: pointer;
+}
+#Menu header i.far.fa-heart:hover::before {
+  color: #c466db;
 }
 #Menu div.wrapper-grid section.entrees header {
   padding-top: 1rem;

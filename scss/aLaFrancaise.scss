@@ -76,8 +76,13 @@ Texte: Roboto
             font-size: x-large;
             padding-right: 0.9rem;
             color: $secondNav-icon-color;
+            cursor: pointer;
+
+            &:hover::before{
+                color: #c466db;   
+            }
         }
-        
+
         div.wrapper-grid section.entrees header{
     
             padding-top: 1rem;
