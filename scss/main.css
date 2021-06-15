@@ -474,6 +474,20 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
 }
 
 /*----------footer-----------*/
+/*
+Mes Polices
+Logo et titres: Shrikhand
+Texte: Roboto    
+*/
+.wrapper {
+  min-width: 320px;
+  max-width: 400px;
+  /*Un point d'arrêt fluide */
+  margin: 0px 22px;
+  /*Pour centrer les éléments: 
+  je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+}
+
 .heart1 {
   position: absolute;
   width: 15px;
@@ -520,37 +534,25 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
   width: 13px;
   height: 13px;
 }
-.heart1:hover::before:hover {
+
+.heart1:hover::after {
   background: linear-gradient(#ff79da, #c466db);
   border: none;
+  width: 9px;
+  height: 13px;
 }
 
-.heart1:before:hover {
-  background: linear-gradient(#ff79da, #c466db);
-  border: none;
-}
-
-#Restaurants div.wrapper-grid a div.card div.card__body.laPaletteDuGout div.heart1::before:hover {
+.heart1:hover::before {
   background: linear-gradient(#ff79da, #c466db);
   border: none;
   width: 13px;
-  height: 8px;
+  height: 8.5px;
 }
 
-/*
-Mes Polices
-Logo et titres: Shrikhand
-Texte: Roboto    
-*/
-.wrapper {
-  min-width: 320px;
-  max-width: 400px;
-  /*Un point d'arrêt fluide */
-  margin: 0px 22px;
-  /*Pour centrer les éléments: 
-  je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
-}
-
+/*.heart1:hover > ::before{
+    background: linear-gradient(#ff79da, #c466db);
+    border: none;
+}*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media all and (min-width: 401px) and (max-width: 760px) {

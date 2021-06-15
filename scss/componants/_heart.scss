@@ -51,3 +51,8 @@
     width: 13px;
     height: 8px;
 }
+
+.heart1:hover > ::before{
+    background: linear-gradient(#ff79da, #c466db);
+    border: none;
+}

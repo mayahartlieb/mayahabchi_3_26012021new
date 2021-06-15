@@ -1,14 +1,14 @@
-@import "../base/normes"; /*---box sizing -----------*/
-@import "../utils/variables";
-@import "../utils/font_weights";   /*MAPS*/
-@import "../pages/main_loader"; /*-----------LOADER----------*/
-@import "../pages/main_header"; /*----------HEADER-----------*/
-@import "../pages/main_secondHeader"; /*----------secondHEADER-----------*/
-@import "../pages/main_nav";  /*----------mainNav-----------*/
-@import "../pages/main_secondNav";    /*-----------secondNav--------------*/
-@import "../pages/main_content";    /*----------mainContent-----------*/
-@import "../pages/main_footer";    /*----------footer-----------*/  
-@import "../componants/heart";    
+@import "base/normes"; /*---box sizing -----------*/
+@import "utils/variables";
+@import "utils/font_weights";   /*MAPS*/
+@import "pages/main_loader"; /*-----------LOADER----------*/
+@import "pages/main_header"; /*----------HEADER-----------*/
+@import "pages/main_secondHeader"; /*----------secondHEADER-----------*/
+@import "pages/main_nav";  /*----------mainNav-----------*/
+@import "pages/main_secondNav";    /*-----------secondNav--------------*/
+@import "pages/main_content";    /*----------mainContent-----------*/
+@import "pages/main_footer";    /*----------footer-----------*/  
+   
  
     
     /*
@@ -26,7 +26,64 @@
         
     }
 
-  
+    .heart1{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: white;
+        right: 20px;
+        top: 190px;
+        border-bottom: 1px solid #817c7a;
+        border-right: 1px solid #817c7a;
+        transform: rotate(45deg);
+    }
+    .heart1:before{
+        content: ""; /*insert generated content*/
+        position: absolute;
+        top: -8px;
+        width: 13px;
+        height: 8px;
+        background: #ffffff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-left: 1px solid #817c7a;
+        border-right: 1px solid #817c7a;
+    }
+    .heart1:after{
+        content: ""; /*insert generated content*/
+        position: absolute;
+        left: -8px;
+        width: 8px;
+        height: 13px;
+        background: #ffffff;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top: 1px solid #817c7a;
+        border-bottom: 1px solid #817c7a;
+    }
+    .heart1:hover{
+        background: linear-gradient(#ff79da, #c466db);
+        border: none;
+        width: 13px;
+        height:13px;
+    }
+    .heart1:hover::after{
+        background: linear-gradient(#ff79da, #c466db);
+        border: none;
+        width: 9px;
+        height: 13px;
+    }
+    .heart1:hover::before{
+        background: linear-gradient(#ff79da, #c466db);
+        border: none;
+        width: 13px;
+        height: 8.5px;
+    }
+    
+    /*.heart1:hover > ::before{
+        background: linear-gradient(#ff79da, #c466db);
+        border: none;
+    }*/
     
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
@@ -198,7 +255,7 @@
        
      
     @media all and (min-width: 1025px) and (max-width: 1600px){
-        @import "../layouts/desktopFooter";
+        @import "layouts/desktopFooter";
 
         .wrapper{
 
